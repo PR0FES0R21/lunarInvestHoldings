@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sys-title {
+    text-align: center;
+    font-size: 35px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    background-color: #43A49B;
+}
+
+.user-card {
+    height: 100vh;
+    background: linear-gradient(#43A49B 43%, #E0F2F1 43%);
+}
+
+main {
+    overflow-y: scroll; /* Membuat konten scrollable jika melebihi ketinggian user-card */
+    max-height: calc(100vh - 85px);
+}
+
+
+
+.logo {
+    width: 50px;
+}
+
+i {
+    color: #408d86;
+}
+
+
+/* style untuk navigation menu bottom */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-between; /* Adjust the spacing as needed */
+    align-items: center;
+    list-style: none;
+}
+.nav-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #43A49B;
+}
+
+.nav-link.active {
+     color: #263339;
+     font-weight: bolder;
+}
+
+.nav-link.active .material-icons {
+    color: #263339; /* Warna ikon untuk elemen yang aktif */
+}
+
+/* end navigation menu */
+
+
+.material-icons  {
+    margin-bottom: 5px;
+    color: #43A49B;
+}
+
+.bg-ternary {
+    background-color: #D0EBEA;
+}
+
+
+/* Media Query untuk perangkat Android dengan lebar layar maksimum 767px */
+@media (min-width: 515px) and (max-width: 767px) {
+    /* Gaya yang akan diterapkan pada perangkat Android */
+    /* Misalnya, mengatur font lebih besar atau mengubah tata letak */
+
+    .nav-item {
+        font-size: 16px;
+        margin: 0 20px;
+    }
+
+    .user-card {
+        height: 100vh;
+        background: linear-gradient(#43A49B 45%, #E0F2F1 45%);
+    }
+}
+
+/* Media Query untuk tablet dengan lebar layar antara 768px dan 1023px */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Gaya yang akan diterapkan pada tablet */
+    .nav-item {
+        margin: 0 45px;
+    }
+
+    .user-card {
+        height: 100vh;
+        background: linear-gradient(#43A49B 48%, #E0F2F1 48%);
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+    .nav-item {
+        margin: 0 45px;
+    }
+
+    .user-card {
+        height: 100vh;
+        background: linear-gradient(#43A49B 50%, #E0F2F1 50%);
+    }
+
+    .vendor {
+        display: none;
+    }
+
+}
+
+/* Media Query untuk laptop dengan lebar layar minimum 1024px */
+@media (min-width: 1024px) {
+    /* Gaya yang akan diterapkan pada laptop */
+    .nav-item {
+        margin: 0 75px;
+    }
+
+    .user-card {
+        height: 100vh;
+        background: linear-gradient(#43A49B 50%, #E0F2F1 45%);
+    }
+
+    .vendor {
+        display: none;
+    }
+}
